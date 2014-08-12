@@ -1,0 +1,49 @@
+.panel {
+  background:#194814;
+}
+
+.navbar {
+  background: #035f2b;
+}
+
+.navbar .left span,
+.navbar .center,
+.navbar .right {
+  color: #fff;
+}
+
+.list-block-left ul {
+  background: none;
+}
+
+.panel-left .list-block ul, .panel-left .list-block .item-inner {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.list-title-left {
+  color:#fff;
+}
+
+i.icon.icon-form-title {
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/i-form-title.png");
+}
+
+i.icon.icon-form-common {
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/i-form-common.png");
+}
+
+i.icon.icon-form-important {
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/i-form-important.png");
+}
+
+i.icon.icon-form-departm {
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/i-form-departm.png");
+}
