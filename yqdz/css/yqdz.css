@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  /*background-image:url(../img/bga.png);
+  background-attachment: fixed;
+  background-size: contain;*/
+  background:url(../img/bg.png) fixed center no-repeat;
+  ba/ckground-size:cover;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingHei", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.2;
+  -ms-content-zooming: none;
+  color:#fff;
+}
+
+@font-face {
+  font-family:'PingHei';
+  font-style:normal;
+  font-weight:200;
+  src:url("../font/PingHei-light.woff") format("woff"),
+      url("../font/PingHei-light.ttf") format("truetype");
+  *src:url('');
+  /* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
+}
+
+.dz-header {
+  width:100%;
+  text-align:center;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom:none;
+  padding:30px 0;
+  cursor:default;
+  font-family:minijianchaochuhei71267;
+}
+.dz-header:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+.dz-page {
+  width:1000px;
+  margin:20px auto;
+}
+
+.dz-brick {
+  background:rgba(255, 255, 255, 0.2);
+  border-radius:12px;
+  
+}
+.dz-brick:hover {
+  background:rgba(255, 255, 255, 0.1);
+}
+.dz-bk-left {
+  float:left;
+  width:640px;
+  height:516px;
+  padding:20px;
+}
+
+.dz-bk-right-group {
+  float:right;
+  width:350px;
+}
+.dz-bk-right-group > .dz-bk-right:first-child { margin-top:0; }
+.dz-bk-right-group > .dz-bk-right:last-child { margin-bottom:0; }
+.dz-bk-right {
+  margin:10px 0;
+  height:165px;
+  padding:10px;
+}
+
+.dz-car-area {
+  width:600px;
+  margin:10px 0;
+}
+
+.dz-car-title {
+  padding:2px 10px;
+  back/ground:#841012;
+  back、ground:rgba(132, 16, 18, 0.7);
+  border-radius:4px 4px 0 0;
+  background:-webkit-gradient(linear,center top,center bottom,from(rgba(63, 129, 188, 0.5)),to(rgba(1, 36, 96, 0.5)));
+}
+
+.dz-car-act {
+  height:100px;
+  padding:2px;
+  border-radius:0 0 4px 4px;
+  background:rgba(255, 255, 255, 0.2);
+}
+.dz-car-act:hover {
+  background:rgba(0, 0, 0, 0.7);
+}
+.dz-car-act-a {
+  width:598px;
+  height:76px;
+}
+.edgeLoad-dz-car-act-a-cc,
+.edgeLoad-dz-car-act-a-bd { visibility:hidden; }
+
+.dz-car-act-b {}
+
+.dz-right-title {
+  font-size:16px;
+  height:20px;
+}
+.dz-right-act {
+  width:330px;
+  height:125px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
