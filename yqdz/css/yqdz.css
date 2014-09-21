@@ -5,7 +5,7 @@ body {
   /*background-image:url(../img/bga.png);
   background-attachment: fixed;
   background-size: contain;*/
-  background:url(../img/bg.png) fixed center no-repeat;
+  background:url(../img/bg-small.png) fixed center no-repeat;
   ba/ckground-size:cover;
   margin: 0px;
   padding: 0px;
@@ -98,7 +98,10 @@ body {
   height:76px;
 }
 .edgeLoad-dz-car-act-a-cc,
-.edgeLoad-dz-car-act-a-bd { visibility:hidden; }
+.edgeLoad-dz-car-act-a-bd,
+.edgeLoad-dz-outlook {
+  visibility:hidden;
+ }
 
 .dz-car-act-b {}
 
