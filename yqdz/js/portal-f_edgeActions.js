@@ -15,7 +15,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       Symbol.bindTimelineAction(compId, symbolName, "Default Timeline", "complete", function(sym, e) {
          // insert code to be run at timeline end here
-         sym.play(0);
+         sym.play();
 
       });
       //Edge binding end
@@ -23,4 +23,4 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("stage");
    //Edge symbol end:'stage'
 
-})(jQuery, AdobeEdge, "dz-car-act-a-cc");
+})(jQuery, AdobeEdge, "dz-portal-f");

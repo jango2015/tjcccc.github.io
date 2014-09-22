@@ -46,17 +46,15 @@ if(document.addEventListener ){
    aLoader = [
     //{ load: "edge_includes/jquery-1.7.1.min.js"},
     { load: "js/edge_includes/edge.2.0.1.min.js"},
-          { load: "js/outlook_edge.js"},
-          { load: "js/outlook_edgeActions.js"}];
+          { load: "js/portal-f_edge.js"},
+          { load: "js/portal-f_edgeActions.js"}];
 
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
 
 loadResources(aLoader, doDelayLoad);
 
-preContent={
-   dom: [
-]};//simpleContent
+preContent={dom: [ ]};//simpleContent
 
 dlContent={dom: [ ]};//simpleContent
 
-})( "dz-outlook");
+})( "dz-portal-f");

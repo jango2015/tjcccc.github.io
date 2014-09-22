@@ -24,9 +24,8 @@ var symbols = {
          {
             id:'car',
             type:'image',
-            rect:['0px','18px','100px','58px','auto','auto'],
-            fill:["rgba(0,0,0,0)",im+"car.png",'0px','0px'],
-            userClass:"dz-car"
+            rect:['-100px','47px','100px','58px','auto','auto'],
+            fill:["rgba(0,0,0,0)",im+"car.png",'0px','0px']
          }],
          symbolInstances: [
 
@@ -35,14 +34,15 @@ var symbols = {
    states: {
       "Base State": {
          "${_Stage}": [
-            //["color", "background-color", 'rgba(0,0,0,1.00)'],
-            ["style", "width", '596px'],
-            ["style", "height", '76px'],
-            ["style", "overflow", 'hidden']
+            /*["color", "background-color", 'rgba(0,0,0,0.00)'],*/
+            ["style", "overflow", 'hidden'],
+            ["style", "height", '105px'],
+            ["style", "width", '471px']
          ],
          "${_car}": [
             ["style", "height", '58px'],
-            ["motion", "location", '50px 47px'],
+            ["style", "top", '47px'],
+            ["style", "left", '-156px'],
             ["style", "width", '100px']
          ]
       }
@@ -51,10 +51,10 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 5007,
+         duration: 5000,
          autoPlay: true,
          timeline: [
-            { id: "eid5", tween: [ "motion", "${_car}", [[-97.55,47,0,0],[89.47,47,399.9,0,74.33,0],[648,47,0,0]]], position: 0, duration: 5007 }         ]
+            { id: "eid6", tween: [ "style", "${_car}", "left", '547px', { fromValue: '-156px'}], position: 0, duration: 5000 }         ]
       }
    }
 }

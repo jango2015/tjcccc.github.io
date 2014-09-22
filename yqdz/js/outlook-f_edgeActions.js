@@ -23,4 +23,4 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    })("stage");
    //Edge symbol end:'stage'
 
-})(jQuery, AdobeEdge, "dz-car-act-a-cc");
+})(jQuery, AdobeEdge, "dz-outlook-f");
