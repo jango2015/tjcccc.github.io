@@ -25,3 +25,13 @@ body {
   *src:url('');
   /* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
 }
+
+.index-hd-p {
+  margin-bottom:40px;
+}
+.index-hd-p p {
+  padding:40px;
+}
+.index-hd-p .ihpu {
+  padding:40px;
+}
