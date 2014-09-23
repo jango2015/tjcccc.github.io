@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
   background-size: contain;*/
   background:url(../img/bg-small.png) fixed center no-repeat;
-  ba/ckground-size:cover;
+  background-size:cover;
   margin: 0px;
   padding: 0px;
   -webkit-font-smoothing: antialiased;
