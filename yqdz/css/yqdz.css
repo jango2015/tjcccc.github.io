@@ -20,8 +20,8 @@ body {
   font-family:'PingHei';
   font-style:normal;
   font-weight:200;
-  src:url("../font/PingHei-light.woff") format("woff"),
-      url("../font/PingHei-light.ttf") format("truetype");
+  src:url("../fonts/PingHei-light.woff") format("woff"),
+      url("../fonts/PingHei-light.ttf") format("truetype");
   *src:url('');
   /* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd.  All rights reserved. */
 }
@@ -37,6 +37,19 @@ body {
 }
 .dz-header:hover {
   background: rgba(0, 0, 0, 1);
+}
+
+.dz-header-x {
+  width:100%;
+  text-align:center;
+  background: rgba(5, 42, 102, 0.3);
+  border-bottom:none;
+  padding:30px 0;
+  cursor:default;
+  font-family:minijianchaochuhei71267;
+}
+.dz-header-x:hover {
+  background: rgba(5, 42, 102, 1);
 }
 
 .dz-page {
@@ -110,9 +123,26 @@ body {
 }
 
 
-
-
-
+.dz-bg-change {
+  top:10px;
+  left:10px;
+  position:fixed;
+}
+.dz-bg-switch {
+  float:left;
+  margin:0 20px 0 0;
+  color:#666;
+  background:#666;
+  font:8px;
+  cursor:pointer;
+  width:8px;
+  height:8px;
+  border-radius:8px;
+}
+.dz-bg-active, .dz-bg-switch:hover {
+  color:#efefef;
+  background:#efefef;
+}
 
 
 

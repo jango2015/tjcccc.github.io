@@ -45,7 +45,7 @@ var symbols = {
             id:'success',
             type:'image',
             rect:['305px','-2px','192px','192px','auto','auto'],
-            fill:["rgba(0,0,0,0)",im+"success.png",'0px','0px'],
+            fill:["rgba(0,0,0,0)",im+"success2.png",'0px','0px'],
             transform:[[],[],[],['0.1875','0.1875']]
          },
          {

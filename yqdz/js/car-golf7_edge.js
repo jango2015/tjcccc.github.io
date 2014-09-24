@@ -35,13 +35,13 @@ var symbols = {
       "Base State": {
          "${_Stage}": [
             ["color", "background-color", 'rgba(255,255,255,0.00)'],
-            ["style", "overflow", 'hidden'],
+            ["style", "width", '471px'],
             ["style", "height", '48px'],
-            ["style", "width", '471px']
+            ["style", "overflow", 'hidden']
          ],
          "${_car-sigitar}": [
-            ["style", "height", '40px'],
             ["motion", "location", '-100px 28px'],
+            ["style", "height", '40px'],
             ["style", "width", '100px']
          ]
       }
@@ -50,11 +50,11 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 5000,
+         duration: 8000,
          autoPlay: true,
          timeline: [
             { id: "eid2", tween: [ "color", "${_Stage}", "background-color", 'rgba(255,255,255,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(255,255,255,0.00)'}], position: 0, duration: 0 },
-            { id: "eid3", tween: [ "motion", "${_car-sigitar}", [[-100,28,0,0],[600.04,28,0,0]]], position: 0, duration: 5000 }         ]
+            { id: "eid3", tween: [ "motion", "${_car-sigitar}", [[-100,28,0,0],[600.04,28,0,0]]], position: 0, duration: 8000 }         ]
       }
    }
 }

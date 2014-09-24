@@ -48,3 +48,23 @@ if (document.getElementsByClassName("dz-outlook-f").length > 0) {
   document.write("<script type='text/javascript' charset='utf-8' src='js/outlook-f_edgePreload.js'></script>");
 };
 
+// bg-change
+function bgChange(bgid) {
+  //alert ("bg"+bgid);
+  var i;
+  for (i=1; i<=4; i++) {
+    if (i == bgid) {
+      document.getElementById("bg"+i).className = "dz-bg-switch dz-bg-active";
+      document.body.style.backgroundImage = "url(img/bg" + i + ".png)";
+      if (i == 1 || i == 4) {
+        document.getElementById("dz-header").className = "dz-header";
+      }
+      if (i != 1 && i != 4) {
+        document.getElementById("dz-header").className = "dz-header-x";
+      }
+    }
+    else {
+      document.getElementById("bg"+i).className = "dz-bg-switch";
+    }
+  }
+}

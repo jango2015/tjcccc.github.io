@@ -25,7 +25,6 @@ var symbols = {
             id:'sap',
             type:'image',
             rect:['79px','47px','200px','97px','auto','auto'],
-            opacity:0,
             fill:["rgba(0,0,0,0)",im+"sap.png",'0px','0px']
          },
          {
@@ -48,9 +47,9 @@ var symbols = {
       "Base State": {
          "${_Stage}": [
             ["color", "background-color", 'rgba(255,255,255,0.00)'],
-            ["style", "overflow", 'hidden'],
+            ["style", "width", '475px'],
             ["style", "height", '200px'],
-            ["style", "width", '475px']
+            ["style", "overflow", 'hidden']
          ],
          "${_success}": [
             ["style", "top", '76px'],
@@ -84,14 +83,13 @@ var symbols = {
          autoPlay: true,
          timeline: [
             { id: "eid23", tween: [ "style", "${_sap}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
-            { id: "eid21", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 750 },
-            { id: "eid24", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '0'}], position: 750, duration: 250 },
-            { id: "eid31", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '1'}], position: 2750, duration: 0 },
+            { id: "eid24", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '0'}], position: 500, duration: 250 },
+            { id: "eid31", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '1'}], position: 2875, duration: 0 },
             { id: "eid22", tween: [ "style", "${_success}", "left", '325px', { fromValue: '304px'}], position: 5000, duration: 750 },
-            { id: "eid25", tween: [ "motion", "${_search}", [[247,119,0,0],[218.83,116.19,-6.18,-4.7,-48.23,-36.68],[207.7,91.48,-0.09,-10.13,-0.41,-44.12],[227.8,65.02,19.92,-7.41,39.2,-14.58],[267.45,77.79,15.57,23.07,37.07,54.91],[270.32,103.68,-14.37,25.09,-13.26,23.15],[254,117,0.13,-0.98]]], position: 1500, duration: 1500 },
-            { id: "eid34", tween: [ "motion", "${_search}", [[254,117,0,0],[235.07,122.56,-23.43,0.69,-27.28,0.8],[220,118,0,0]]], position: 3500, duration: 250 },
-            { id: "eid35", tween: [ "motion", "${_search}", [[220,118,0,0],[211,106.02,0.62,-8,1.5,-19.48],[214.24,99.1,9.3,-10.45,6.46,-7.26],[222,92,0,0]]], position: 4250, duration: 250 },
-            { id: "eid2", tween: [ "color", "${_Stage}", "background-color", 'rgba(255,255,255,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(255,255,255,0.00)'}], position: 8000, duration: 0 }         ]
+            { id: "eid21", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 750 },
+            { id: "eid2", tween: [ "color", "${_Stage}", "background-color", 'rgba(255,255,255,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(255,255,255,0.00)'}], position: 8000, duration: 0 },
+            { id: "eid25", tween: [ "motion", "${_search}", [[247,119,0,0],[218.83,116.19,-6.18,-4.7,-48.23,-36.68],[207.7,91.48,-0.09,-10.13,-0.41,-44.12],[227.8,65.02,19.92,-7.41,39.2,-14.58],[267.45,77.79,15.57,23.07,37.07,54.91],[270.32,103.68,-14.37,25.09,-13.26,23.15],[254,117,0,0]]], position: 1000, duration: 2250 },
+            { id: "eid34", tween: [ "motion", "${_search}", [[254,117,0,0],[235.07,122.56,-23.43,0.69,-27.28,0.8],[220,118,0,0]]], position: 3750, duration: 750 }         ]
       }
    }
 }
