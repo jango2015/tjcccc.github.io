@@ -62,31 +62,28 @@ body {
   background:rgba(255, 255, 255, 0.2);
   border-radius:12px;
   margin:10px 0;
-  height:165px;
+  height:250px;
   padding:10px;
 }
 .dz-brick:hover {
   background:rgba(255, 255, 255, 0.1);
 }
 .dz-bk-title {
-  font-size:16px;
-  height:20px;
+  font-size:24px;
+  height:30px;
   text-shadow:2px 2px 2px #000;
 }
-.dz-right-act {
-  width:475px;
-  height:125px;
+.dz-fis {
+  height:66px;
 }
 
 .dz-car-title {
-  padding:2px 10px;
-  background:rgba(132, 16, 18, 0.7);
-  border-radius:4px 4px 0 0;
-  background:-webkit-gradient(linear,center top,center bottom,from(rgba(63, 129, 188, 0.5)),to(rgba(1, 36, 96, 0.5)));
+  position:absolute;
+  font-size:14px;
+  margin:5px 0 0 5px;
 }
-
 .dz-car-act {
-  height:129px;
+  height:62px;
   padding:2px;
   border-radius:4px;
   background:rgba(255, 255, 255, 0.2);
@@ -96,17 +93,21 @@ body {
 }
 .dz-car-act-a {
   width:471px;
-  height:105px;
+  height:48px;
 }
 .edgeLoad-dz-car-act-a-cc,
 .edgeLoad-dz-car-act-a-bd,
 .edgeLoad-dz-outlook {
   visibility:hidden;
- }
+}
 
 .dz-car-act-b {}
 
 
+.dz-right-act {
+  width:475px;
+  height:200px;
+}
 
 
 

@@ -24,21 +24,20 @@ var symbols = {
          {
             id:'sap',
             type:'image',
-            rect:['79px','14px','200px','97px','auto','auto'],
+            rect:['79px','47px','200px','97px','auto','auto'],
+            opacity:0,
             fill:["rgba(0,0,0,0)",im+"sap.png",'0px','0px']
          },
          {
             id:'success',
             type:'image',
             rect:['352px','63px','36px','36px','auto','auto'],
-            opacity:0,
             fill:["rgba(0,0,0,0)",im+"success.png",'0px','0px']
          },
          {
             id:'search',
             type:'image',
-            rect:['195px','31px','64px','64px','auto','auto'],
-            opacity:0,
+            rect:['215px','87px','64px','64px','auto','auto'],
             fill:["rgba(0,0,0,0)",im+"search.png",'0px','0px']
          }],
          symbolInstances: [
@@ -49,26 +48,29 @@ var symbols = {
       "Base State": {
          "${_Stage}": [
             ["color", "background-color", 'rgba(255,255,255,0.00)'],
-            ["style", "width", '475px'],
-            ["style", "height", '125px'],
-            ["style", "overflow", 'hidden']
+            ["style", "overflow", 'hidden'],
+            ["style", "height", '200px'],
+            ["style", "width", '475px']
          ],
          "${_success}": [
-            ["style", "top", '63px'],
+            ["style", "top", '76px'],
             ["style", "height", '48px'],
             ["style", "opacity", '0'],
-            ["style", "left", '334px'],
+            ["style", "left", '304px'],
             ["style", "width", '48px']
          ],
          "${_search}": [
-            ["style", "opacity", '0'],
-            ["style", "width", '64px'],
+            ["style", "top", '87px'],
             ["motion", "location", '227.07032775879px 63px'],
-            ["style", "height", '64px']
+            ["style", "height", '64px'],
+            ["style", "opacity", '0'],
+            ["style", "left", '215px'],
+            ["style", "width", '64px']
          ],
          "${_sap}": [
-            ["style", "top", '14px'],
+            ["style", "top", '47px'],
             ["style", "height", '97px'],
+            ["style", "opacity", '0'],
             ["style", "left", '79px'],
             ["style", "width", '200px']
          ]
@@ -78,20 +80,17 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 13000,
+         duration: 8000,
          autoPlay: true,
          timeline: [
-            { id: "eid13", tween: [ "style", "${_success}", "left", '334px', { fromValue: '334px'}], position: 0, duration: 0 },
-            { id: "eid12", tween: [ "style", "${_success}", "width", '48px', { fromValue: '48px'}], position: 0, duration: 0 },
-            { id: "eid4", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
-            { id: "eid10", tween: [ "style", "${_search}", "opacity", '0', { fromValue: '1'}], position: 8000, duration: 500 },
-            { id: "eid11", tween: [ "style", "${_success}", "height", '48px', { fromValue: '48px'}], position: 0, duration: 0 },
-            { id: "eid7", tween: [ "style", "${_success}", "top", '39px', { fromValue: '63px'}], position: 8500, duration: 1500 },
-            { id: "eid5", tween: [ "motion", "${_search}", [[227.07,63,0,0],[245.44,33.75,17.88,-6.06,31.03,-10.51],[269.43,34.06,17.43,9.37,22.43,12.06],[286.17,59.49,-3.9,32.92,-4.8,40.53],[273.17,84.6,-5.2,4.91,-27.83,26.27],[257.84,87.15,-16.77,-1.94,-21.3,-2.46],[243.83,82.84,-29.96,-9.82,-6.23,-2.04],[226,63,0,0]]], position: 500, duration: 2500 },
-            { id: "eid8", tween: [ "motion", "${_search}", [[227.07,63,0,0],[245.44,33.75,17.88,-6.06,31.03,-10.51],[269.43,34.06,17.43,9.37,22.43,12.06],[286.17,59.49,-3.9,32.92,-4.8,40.53],[273.17,84.6,-5.2,4.91,-27.83,26.27],[257.84,87.15,-16.77,-1.94,-21.3,-2.46],[243.83,82.84,-29.96,-9.82,-6.23,-2.04],[226,63,0,0]]], position: 3000, duration: 2500 },
-            { id: "eid9", tween: [ "motion", "${_search}", [[227.07,63,0,0],[245.44,33.75,17.88,-6.06,31.03,-10.51],[269.43,34.06,17.43,9.37,22.43,12.06],[286.17,59.49,-3.9,32.92,-4.8,40.53],[273.17,84.6,-5.2,4.91,-27.83,26.27],[257.84,87.15,-16.77,-1.94,-21.3,-2.46],[243.83,82.84,-29.96,-9.82,-6.23,-2.04],[226,63,0,0]]], position: 5500, duration: 2500 },
-            { id: "eid2", tween: [ "color", "${_Stage}", "background-color", 'rgba(255,255,255,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(255,255,255,0.00)'}], position: 11000, duration: 0 },
-            { id: "eid6", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 8500, duration: 1500 }         ]
+            { id: "eid23", tween: [ "style", "${_sap}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
+            { id: "eid21", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 750 },
+            { id: "eid24", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '0'}], position: 750, duration: 250 },
+            { id: "eid31", tween: [ "style", "${_search}", "opacity", '1', { fromValue: '1'}], position: 2750, duration: 0 },
+            { id: "eid22", tween: [ "style", "${_success}", "left", '325px', { fromValue: '304px'}], position: 5000, duration: 750 },
+            { id: "eid25", tween: [ "motion", "${_search}", [[247,119,0,0],[218.83,116.19,-6.18,-4.7,-48.23,-36.68],[207.7,91.48,-0.09,-10.13,-0.41,-44.12],[227.8,65.02,19.92,-7.41,39.2,-14.58],[267.45,77.79,15.57,23.07,37.07,54.91],[270.32,103.68,-14.37,25.09,-13.26,23.15],[254,117,0.13,-0.98]]], position: 1500, duration: 1500 },
+            { id: "eid26", tween: [ "motion", "${_search}", [[247,119,0,0],[218.83,116.19,-6.18,-4.7,-48.23,-36.68],[207.7,91.48,-0.09,-10.13,-0.41,-44.12],[227.8,65.02,19.92,-7.41,39.2,-14.58],[267.45,77.79,15.57,23.07,37.07,54.91],[270.32,103.68,-14.37,25.09,-13.26,23.15],[254,117,0.13,-0.98]]], position: 3000, duration: 1500 },
+            { id: "eid2", tween: [ "color", "${_Stage}", "background-color", 'rgba(255,255,255,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(255,255,255,0.00)'}], position: 8000, duration: 0 }         ]
       }
    }
 }

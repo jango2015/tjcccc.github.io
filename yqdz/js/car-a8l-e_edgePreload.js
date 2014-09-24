@@ -46,8 +46,8 @@ if(document.addEventListener ){
    aLoader = [
     //{ load: "edge_includes/jquery-1.7.1.min.js"},
     { load: "js/edge_includes/edge.2.0.1.min.js"},
-          { load: "js/car_edge.js"},
-          { load: "js/car_edgeActions.js"}];
+          { load: "js/car-a8l-e_edge.js"},
+          { load: "js/car-a8l-e_edgeActions.js"}];
 
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
 
@@ -55,8 +55,6 @@ loadResources(aLoader, doDelayLoad);
 
 preContent={dom: [ ]};//simpleContent
 
-dlContent={
-   dom: [
-]};//simpleContent
+dlContent={dom: [ ]};//simpleContent
 
-})( "dz-car-act-a-cc");
+})( "dz-car-a8l-e");
