@@ -33,7 +33,7 @@ var symbols = {
             type:'image',
             rect:['328px','26px','48px','48px','auto','auto'],
             opacity:0,
-            fill:["rgba(0,0,0,0)",im+"desktop.png",'0px','0px']
+            fill:["rgba(0,0,0,0)",im+"outlook.png",'0px','0px']
          },
          {
             id:'envelope-o',
@@ -63,17 +63,22 @@ var symbols = {
    states: {
       "Base State": {
          "${_RoundRect}": [
-            ["color", "background-color", 'rgba(255,255,255,1.00)'],
-            ["style", "height", '12px'],
-            ["style", "top", '157px'],
-            ["transform", "scaleX", '1'],
             ["style", "-webkit-transform-origin", [50,50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "border-top-left-radius", [2,2], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["style", "border-bottom-right-radius", [2,2], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["transform", "scaleX", '1'],
+            ["gradient", "background-image", [50,50,true,'farthest-corner',[['rgba(50,153,253,1.00)',0],['rgba(49,105,195,1.00)',100]]]],
             ["style", "left", '70px'],
-            ["style", "width", '0px']
+            ["style", "width", '0px'],
+            ["style", "top", '157px'],
+            ["style", "border-bottom-left-radius", [2,2], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["style", "height", '12px'],
+            ["style", "border-top-right-radius", [2,2], {valueTemplate:'@@0@@px @@1@@px'} ],
+            ["color", "background-color", 'rgba(255,255,255,1.00)']
          ],
          "${_envelope-o}": [
             ["style", "top", '84px'],
@@ -126,21 +131,26 @@ var symbols = {
             { id: "eid92", tween: [ "style", "${_envelope-o}", "opacity", '0.5', { fromValue: '1'}], position: 4000, duration: 750 },
             { id: "eid64", tween: [ "motion", "${_envelope-o}", [[115,109,0,0],[115,81.95,0,0]]], position: 500, duration: 500 },
             { id: "eid66", tween: [ "motion", "${_envelope-o}", [[115,75.96,0,0],[173.8,39.61,22.2,-3.76,57.83,-9.8],[204.17,38.75,35.23,10.87,27.92,8.61],[238.93,55.07,34.19,18.01]]], position: 1250, duration: 1750 },
-            { id: "eid78", tween: [ "style", "${_desktopCopy}", "left", '356px', { fromValue: '356px'}], position: 8000, duration: 0 },
-            { id: "eid62", tween: [ "style", "${_desktop}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
+            { id: "eid68", tween: [ "style", "${_envelope-o}", "height", '40px', { fromValue: '48px'}], position: 1250, duration: 1750 },
             { id: "eid84", tween: [ "style", "${_envelope-o}", "display", 'none', { fromValue: 'block'}], position: 3250, duration: 0 },
             { id: "eid85", tween: [ "style", "${_envelope-o}", "display", 'block', { fromValue: 'none'}], position: 3375, duration: 0 },
             { id: "eid86", tween: [ "style", "${_envelope-o}", "display", 'none', { fromValue: 'block'}], position: 3500, duration: 0 },
             { id: "eid90", tween: [ "style", "${_envelope-o}", "display", 'block', { fromValue: 'none'}], position: 3615, duration: 0 },
             { id: "eid61", tween: [ "style", "${_desktopCopy}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
-            { id: "eid43", tween: [ "style", "${_RoundRect}", "width", '166px', { fromValue: '0px'}], position: 1250, duration: 1750 },
-            { id: "eid68", tween: [ "style", "${_envelope-o}", "height", '40px', { fromValue: '48px'}], position: 1250, duration: 1750 },
             { id: "eid79", tween: [ "style", "${_desktopCopy}", "top", '22px', { fromValue: '22px'}], position: 8000, duration: 0 },
-            { id: "eid57", tween: [ "style", "${_RoundRect}", "height", '12px', { fromValue: '12px'}], position: 1250, duration: 0 },
+            { id: "eid9", tween: [ "color", "${_Stage}", "background-color", 'rgba(0,0,0,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(0,0,0,0.00)'}], position: 8000, duration: 0 },
+            { id: "eid62", tween: [ "style", "${_desktop}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
+            { id: "eid98", tween: [ "style", "${_RoundRect}", "border-bottom-right-radius", [2,2], { valueTemplate: '@@0@@px @@1@@px', fromValue: [2,2]}], position: 0, duration: 0 },
+            { id: "eid97", tween: [ "style", "${_RoundRect}", "border-top-right-radius", [2,2], { valueTemplate: '@@0@@px @@1@@px', fromValue: [2,2]}], position: 0, duration: 0 },
+            { id: "eid96", tween: [ "style", "${_RoundRect}", "border-top-left-radius", [2,2], { valueTemplate: '@@0@@px @@1@@px', fromValue: [2,2]}], position: 0, duration: 0 },
+            { id: "eid43", tween: [ "style", "${_RoundRect}", "width", '166px', { fromValue: '0px'}], position: 1250, duration: 1750 },
+            { id: "eid94", tween: [ "gradient", "${_RoundRect}", "background-image", [50,50,true,'farthest-corner',[['rgba(50,153,253,1.00)',0],['rgba(49,105,195,1.00)',100]]], { fromValue: [50,50,true,'farthest-corner',[['rgba(50,153,253,1.00)',0],['rgba(49,105,195,1.00)',100]]]}], position: 0, duration: 0 },
+            { id: "eid78", tween: [ "style", "${_desktopCopy}", "left", '356px', { fromValue: '356px'}], position: 8000, duration: 0 },
+            { id: "eid95", tween: [ "style", "${_RoundRect}", "border-bottom-left-radius", [2,2], { valueTemplate: '@@0@@px @@1@@px', fromValue: [2,2]}], position: 0, duration: 0 },
             { id: "eid46", tween: [ "style", "${_success}", "left", '221px', { fromValue: '200px'}], position: 5000, duration: 750 },
-            { id: "eid21", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 750 },
             { id: "eid67", tween: [ "style", "${_envelope-o}", "width", '40px', { fromValue: '48px'}], position: 1250, duration: 1750 },
-            { id: "eid9", tween: [ "color", "${_Stage}", "background-color", 'rgba(0,0,0,0.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(0,0,0,0.00)'}], position: 8000, duration: 0 }         ]
+            { id: "eid57", tween: [ "style", "${_RoundRect}", "height", '12px', { fromValue: '12px'}], position: 1250, duration: 0 },
+            { id: "eid21", tween: [ "style", "${_success}", "opacity", '1', { fromValue: '0'}], position: 5000, duration: 750 }         ]
       }
    }
 }
