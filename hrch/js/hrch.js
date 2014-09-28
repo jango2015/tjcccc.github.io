@@ -2,7 +2,7 @@
 
 // 微软雅黑粗体
 (function () {
-  document.write("<script type='text/javascript' src='http://fast.fonts.net/jsapi/fd7a5d29-19b7-4ac2-a253-c25cd6208b35.js'></script>");
+  document.write("<script type='text/javascript' charset='utf-8' src='http://fast.fonts.net/jsapi/fd7a5d29-19b7-4ac2-a253-c25cd6208b35.js'></script>");
 })();
 
 // 判断是否启动动画
@@ -27,7 +27,7 @@ function AsideMenu(menuClassID) {
   });
 }
 
-// 图表展现样式
+// 图表展现
 (function () {
   $(".data-chart").fadeIn(2000);
 })();
