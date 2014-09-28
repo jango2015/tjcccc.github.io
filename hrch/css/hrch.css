@@ -367,6 +367,7 @@ img {
 }
 
 .data-chart {
+  display:none;
   width:700px;
   margin:60px auto;
 }

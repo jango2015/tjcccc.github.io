@@ -26,3 +26,8 @@ function AsideMenu(menuClassID) {
     $(c).slideToggle(500);
   });
 }
+
+// 图表展现样式
+(function () {
+  $(".data-chart").fadeIn(2000);
+})();
