@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HONDA HRCh数据分析平台</title>
+<link rel="stylesheet" href="css/hrch.css">
+<link href='http://www.youziku.com/webfont/CSS/36391801fd82962d210d6fad3deae78b' rel='stylesheet' type='text/css'/>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+<!-- begin top -->
+<div class="top">
+  <div class="hrch-width">
+    <div class="user">
+      <b>XXX</b>
+      用户，您好！
+    </div>
+    <div class="user-ctrl">
+      <a href="#">退出</a>
+      <span>|</span>
+      <a href="#">返回门户</a>
+    </div>
+  </div>
+</div>
+<!-- end top -->
+
+<!-- begin header -->
+<div class="header">
+  <div class="hrch-width">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png"></a>
+    </div>
+    <div class="site-title">HRCh数据分析平台V1.0</div>
+  </div>
+</div>
+<!-- end header -->
+
+<!-- begin nav -->
+<div class="nav">
+  <div class="hrch-width">
+    <ul>
+      <li class="nav-li-active">报表分析系统</li>
+      <li onClick="">基础数据维护</li>
+      <li onClick="">数据导入与接口</li>
+      <li onClick="">用户管理</li>
+      <li onClick="">我的账户</li>
+    </ul>
+  </div>
+</div>
+<!-- end nav -->
+
+<!-- begin section -->
+<div class="section hrch-width page">
+
+  <div class="page-title">
+    <span>当前位置：</span>
+    <span><a href="#">数据分析中心</a></span>
+    <span>&gt;&gt;</span>
+    <span><a href="#">人</a></span>
+    <span>&gt;&gt;</span>
+    <span>全所要员情报</span>
+  </div>
+  
+  <div class="aside">
+    <div class="aside-menu">
+      <div class="aside-menu-title asmt-1" onClick="AsideMenu(1)">历年年末在籍人数</div>
+      <!-- asmt：标题标记-->
+      <div class="aside-menu-c asmc-1">
+        <!-- asmc：菜单内容标记-->
+        <div class="aside-menu-info">（全所、部门、科室）</div>
+        <ul class="asms-1">
+          <li><a href="#">性别</a></li>
+          <li><a href="#">年龄</a></li>
+          <li><a href="#">等级</a></li>
+          <li><a href="#">在籍年数</a></li>
+          <li><a href="#">学历</a></li>
+          <li><a href="#">历年年末在籍人数比率</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aside-menu">
+      <div class="aside-menu-title asmt-2" onClick="AsideMenu(2)">历年年末退籍人数</div>
+      <div class="aside-menu-c asmc-2">
+        <div class="aside-menu-info">（全所、部门、科室）</div>
+        <ul>
+          <li><a href="#">年龄</a></li>
+          <li><a href="#">等级</a></li>
+          <li><a href="#">在籍年数</a></li>
+          <li><a href="#">退职理由</a></li>
+          <li><a href="#">历年年末辞职率</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aside-menu">
+      <div class="aside-menu-title asmt-3" onClick="AsideMenu(3)">历年年末在籍人数</div>
+      <div class="aside-menu-c asmc-3">
+        <div class="aside-menu-info">（全所、部门、科室）</div>
+        <ul>
+          <li><a href="#">性别</a></li>
+          <li><a href="#">年龄</a></li>
+          <li><a href="#">等级</a></li>
+          <li><a href="#">在籍年数</a></li>
+          <li><a href="#">学历</a></li>
+          <li><a href="#">历年月末在职比率</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aside-menu">
+      <div class="aside-menu-title asmt-4" onClick="AsideMenu(4)">历年年末退籍人数</div>
+      <div class="aside-menu-c asmc-4">
+        <div class="aside-menu-info">（全所、部门、科室）</div>
+        <ul>
+          <li><a href="#">年龄</a></li>
+          <li><a href="#">等级</a></li>
+          <li><a href="#">在籍年数</a></li>
+          <li><a href="#">退职理由</a></li>
+          <li><a href="#">当年月末退职率</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aside-menu">
+      <div class="aside-menu-profile asmt-5" onClick="AsideMenu(5)">个人情报一览</div>
+      <div class="aside-menu-c asm-5">
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+  
+    <div class="content-top">
+      <div class="content-title">
+        <div class="content-title-icon"></div>
+        <span>历年年末在籍人数</span>
+      </div>
+      <div class="data-ctrl">
+        <a href="#">源数据导出</a>
+        <span>|</span>
+        <a href="#">报表导出</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+    <div class="data-sift">
+      部门筛选：
+      <a href="#" class="a-active">全所</a>
+      <a href="#">开发</a>
+      <a href="#">管理</a>
+      <a href="#">外观</a>
+    </div>
+    
+    <div class="data-chart">
+      <img src="img/chart-demo.png"></div>
+    </div>
+
+  </div>
+
+  <div class="clearfix"></div>
+  <div style="height:60px;"></div>
+
+</div>
+<!-- end section -->
+
+<!-- begin footer -->
+<div class="footer">
+  Copyright (c) 2014 Honda Motor (China) Investment Co., Ltd. All Rights Reserved. <a href="#">京ICP备05023886号</a>
+</div>
+<!-- end footer -->
+
+<script type="text/javascript" charset="utf-8" src="js/hrch.js"></script>
+</body>
+</html>
