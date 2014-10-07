@@ -24,7 +24,7 @@ function bgChange(bgid) {
 }
 
 
-// switch animate
+// switch animation
 function ActChange(animaClassName) {
   var acn = "."+animaClassName;
   if (acn.indexOf("dz-car")!=-1 && acn.indexOf("-e")!=-1) {
