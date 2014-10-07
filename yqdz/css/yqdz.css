@@ -144,11 +144,29 @@ body {
   background:#efefef;
 }
 
+.change {
+  top:10px;
+  right:10px;
+  position:fixed;
+}
+.change > button {
+  color:#333;
+}
 
-
-
-
-
+.dz-car-a8l,
+.dz-car-a8l-e,
+.dz-car-sigitar,
+.dz-car-sigitar-e,
+.dz-car-golf7,
+.dz-car-golf7-e,
+.dz-sap,
+.dz-sap-f,
+.dz-portal,
+.dz-portal-f,
+.dz-outlook,
+.dz-outlook-f {
+  display: none;
+}
 
 
 

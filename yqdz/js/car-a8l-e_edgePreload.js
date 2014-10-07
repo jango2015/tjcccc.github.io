@@ -44,7 +44,7 @@ if(document.addEventListener ){
     };
 
    aLoader = [
-    //{ load: "edge_includes/jquery-1.7.1.min.js"},
+    { load: "js/edge_includes/jquery-1.7.1.min.js"},
     { load: "js/edge_includes/edge.2.0.1.min.js"},
           { load: "js/car-a8l-e_edge.js"},
           { load: "js/car-a8l-e_edgeActions.js"}];
