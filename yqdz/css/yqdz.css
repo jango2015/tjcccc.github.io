@@ -5,7 +5,7 @@ body {
   /*background-image:url(../img/bga.png);
   background-attachment: fixed;
   background-size: contain;*/
-  background:url(../img/bg-small.png) fixed center no-repeat;
+  background:url(../img/bg3.png) fixed center no-repeat;
   background-size:cover;
   margin: 0px;
   padding: 0px;
@@ -14,6 +14,7 @@ body {
   line-height: 1.2;
   -ms-content-zooming: none;
   color:#fff;
+  zoom: 0;
 }
 
 @font-face {
@@ -29,27 +30,28 @@ body {
 .dz-header {
   width:100%;
   text-align:center;
-  background: rgba(0, 0, 0, 0.3);
-  border-bottom:none;
-  padding:30px 0;
-  cursor:default;
-  font-family:minijianchaochuhei71267;
-}
-.dz-header:hover {
-  background: rgba(0, 0, 0, 1);
-}
-
-.dz-header-x {
-  width:100%;
-  text-align:center;
   background: rgba(5, 42, 102, 0.3);
   border-bottom:none;
   padding:30px 0;
   cursor:default;
   font-family:minijianchaochuhei71267;
 }
-.dz-header-x:hover {
+.dz-header:hover {
   background: rgba(5, 42, 102, 1);
+}
+.dz-header span {
+  font-size: 40px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+.dz-header span:before {
+  content: " ";
+  margin-left: -4px;
+}
+.dz-header-logo {
+  position: absolute;
+  right: 20px;
+  top:10px;
 }
 
 .dz-page {
@@ -81,6 +83,35 @@ body {
 .dz-brick:hover {
   background:rgba(255, 255, 255, 0.1);
 }
+
+.dz-bk-warning {
+  background: rgba(255,98,100,0.2);
+          animation: warning-ani 1s;
+  -webkit-animation: warning-ani 1s;
+     -mox-animation: warning-ani 1s;
+       -o-animation: warning-ani 1s;
+          animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+}
+@keyframes warning-ani {
+  from { background: rgba(255,98,100,0.2); }
+  to { background: rgba(255,98,100,0.4); }
+}
+@-webkit-keyframes warning-ani {
+  from { background: rgba(255,98,100,0.2); }
+  to { background: rgba(255,98,100,0.4); }
+}
+@-moz-keyframes warning-ani {
+  from { background: rgba(255,98,100,0.2); }
+  to { background: rgba(255,98,100,0.4); }
+}
+@-o-keyframes warning-ani {
+  from { background: rgba(255,98,100,0.2); }
+  to { background: rgba(255,98,100,0.4); }
+}
+
 .dz-bk-title {
   font-size:24px;
   height:30px;
@@ -146,7 +177,7 @@ body {
 
 .change {
   top:10px;
-  right:10px;
+  left:10px;
   position:fixed;
 }
 .change > button {

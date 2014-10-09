@@ -2,49 +2,38 @@
 
 
 
-// change background
-function bgChange(bgid) {
-  //alert ("bg"+bgid);
-  var i;
-  for (i=1; i<=4; i++) {
-    if (i == bgid) {
-      document.getElementById("bg"+i).className = "dz-bg-switch dz-bg-active";
-      document.body.style.backgroundImage = "url(img/bg" + i + ".png)";
-      if (i == 1 || i == 4) {
-        document.getElementById("dz-header").className = "dz-header";
-      }
-      if (i != 1 && i != 4) {
-        document.getElementById("dz-header").className = "dz-header-x";
-      }
-    }
-    else {
-      document.getElementById("bg"+i).className = "dz-bg-switch";
-    }
-  }
-}
+ 
+// ActChange (animaClassName) {}
+// 用途：切换状态，调出动画。
+// 参数"animaClassName"是需要播放动画的classname。
 
-
-// switch animation
 function ActChange(animaClassName) {
   var acn = "."+animaClassName;
   if (acn.indexOf("dz-car")!=-1 && acn.indexOf("-e")!=-1) {
     //alert(acn.substring(0,acn.length-2));
     $(acn.substring(0,acn.length-2)).hide();
-    $(acn).show();
+    $(acn).fadeIn();
+    var w = "#" + $(acn).parent().parent().parent().attr("id");
+    $(w).children(".dz-car-act").addClass("dz-bk-warning");
   }
-  if (acn.indexOf("dz-car")!=-1 && acn.indexOf("-e")==-1) {
+  else if (acn.indexOf("dz-car")!=-1 && acn.indexOf("-e")==-1) {
     $(acn+"-e").hide();
-    $(acn).show();
+    $(acn).fadeIn();
+    var w = "#" + $(acn).parent().parent().parent().attr("id");
+    $(w).children(".dz-car-act").removeClass("dz-bk-warning");
   }
-  if (acn.indexOf("dz-car")==-1 && acn.indexOf("-f")!=-1) {
+  else if (acn.indexOf("dz-car")==-1 && acn.indexOf("-f")!=-1) {
     $(acn.substring(0,acn.length-2)).hide();
-    $(acn).show();
+    $(acn).fadeIn();
+    var w = "#" + $(acn).parent().parent().attr("id");
+    $(w).addClass("dz-bk-warning");
   }
-  if (acn.indexOf("dz-car")==-1 && acn.indexOf("-f")==-1) {
+  else if (acn.indexOf("dz-car")==-1 && acn.indexOf("-f")==-1) {
     $(acn+"-f").hide();
-    $(acn).show();
+    $(acn).fadeIn();
+    var w = "#" + $(acn).parent().parent().attr("id");
+    $(w).removeClass("dz-bk-warning");
   }
-
 }
 
 

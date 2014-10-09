@@ -14,13 +14,6 @@
 
 <body>
 
-<div class="dz-bg-change">
-  <div class="dz-bg-switch dz-bg-active" id="bg1" onClick="bgChange(1)"></div>
-  <div class="dz-bg-switch" id="bg2" onClick="bgChange(2)"></div>
-  <div class="dz-bg-switch" id="bg3" onClick="bgChange(3)"></div>
-  <div class="dz-bg-switch" id="bg4" onClick="bgChange(4)"></div>
-</div>
-
 <div class="change">
   <button onClick="ActChange('dz-car-a8l')">a8l</button>
   <button onClick="ActChange('dz-car-a8l-e')">a8l error</button>
@@ -37,10 +30,9 @@
 </div>
 
 <div class="dz-header" id="dz-header">
-  <div style="width:500px; margin:0 auto;">
-    <div style="float:left; margin:16px 20px 0 0;"><img src="img/logo.png" width="280"></div>
-    <div style="float:left; width:192px;"><h1>监控展现图</h1></div>
-  </div>
+  <div class="dz-header-logo"><img src="img/logo.png" width="120"></div>
+  <span>监控展现图</span>
+    
   <div class="clearfix"></div>
 </div>
 
@@ -48,7 +40,7 @@
 <div class="dz-page" id="dz-page">
   <div class="dz-bk-left-group">
     <div class="dz-brick">
-      <div class="dz-bk-title"><i class="icon-dashboard"></i> FIS</div>
+      <div class="dz-bk-title"><i class="icon-dashboard"></i> FIS服务器</div>
       <div class="dz-fis" id="changchun">
         <div class="dz-car-act">
           <div class="dz-car-act-a">
@@ -128,8 +120,8 @@
         </div>
       </div> <!-- 佛山FIS -->
     </div> <!-- FIS -->
-    <div class="dz-brick">
-      <div class="dz-bk-title"><i class="icon-folder-close"></i> Sap</div>
+    <div class="dz-brick" id="sap">
+      <div class="dz-bk-title"><i class="icon-folder-close"></i> Sap服务器</div>
       <div class="dz-right-act">
         <div class="dz-sap" id="Stage4">
         </div>
@@ -143,8 +135,8 @@
     </div> <!-- Sap -->
   </div>
   <div class="dz-bk-right-group">
-    <div class="dz-brick">
-      <div class="dz-bk-title"><i class="icon-home"></i> Portal</div>
+    <div class="dz-brick" id="portal">
+      <div class="dz-bk-title"><i class="icon-home"></i> Portal服务器</div>
       <div class="dz-right-act">
         <div class="dz-portal" id="Stage5">
         </div>
@@ -156,8 +148,8 @@
         -->
       </div>
     </div> <!-- Portal -->
-    <div class="dz-brick">
-      <div class="dz-bk-title"><i class="icon-envelope"></i> Outlook</div>
+    <div class="dz-brick" id="outlook">
+      <div class="dz-bk-title"><i class="icon-envelope"></i> Outlook服务器</div>
       <div class="dz-right-act">
         <div class="dz-outlook" id="Stage6">
         </div>
