@@ -85,7 +85,8 @@ body {
 }
 
 .dz-bk-warning {
-  background: rgba(255,98,100,0.2);
+  background: rgba(187,19,0,0.3);
+  /*background: rgba(255,98,100,0.4);*/
           animation: warning-ani 1s;
   -webkit-animation: warning-ani 1s;
      -mox-animation: warning-ani 1s;
@@ -96,20 +97,20 @@ body {
        -o-animation-iteration-count:infinite;
 }
 @keyframes warning-ani {
-  from { background: rgba(255,98,100,0.2); }
-  to { background: rgba(255,98,100,0.4); }
+  from { background: rgba(187,19,0,0.3); }
+  to { background: rgba(187,19,0,0.6); }
 }
 @-webkit-keyframes warning-ani {
-  from { background: rgba(255,98,100,0.2); }
-  to { background: rgba(255,98,100,0.4); }
+  from { background: rgba(187,19,0,0.3); }
+  to { background: rgba(187,19,0,0.6); }
 }
 @-moz-keyframes warning-ani {
-  from { background: rgba(255,98,100,0.2); }
-  to { background: rgba(255,98,100,0.4); }
+  from { background: rgba(187,19,0,0.3); }
+  to { background: rgba(187,19,0,0.6); }
 }
 @-o-keyframes warning-ani {
-  from { background: rgba(255,98,100,0.2); }
-  to { background: rgba(255,98,100,0.4); }
+  from { background: rgba(187,19,0,0.3); }
+  to { background: rgba(187,19,0,0.6); }
 }
 
 .dz-bk-title {
