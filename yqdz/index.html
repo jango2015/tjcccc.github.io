@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title>一汽-大众 监控展现图</title>
+<title>一汽-大众 主要服务器运维状态</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/yqdz.css">
-<link href='http://www.youziku.com/webfont/CSS/8d97e28470d8a5283b7b50baf13fed77' rel='stylesheet' type='text/css'/>
+<link href='http://www.youziku.com/webfont/CSS/7cd5d67faa6fb90a58cd95f7abfe0214' rel='stylesheet' type='text/css'/>
 
 </head>
 
@@ -31,9 +31,10 @@
 
 <div class="dz-header" id="dz-header">
   <div class="dz-header-logo"><img src="img/logo.png" width="120"></div>
-  <span>监控展现图</span>
+  <span>主要服务器运维状态</span>
     
   <div class="clearfix"></div>
+
 </div>
 
 
@@ -59,7 +60,7 @@
           </div>
           <div class="dz-car-act-b">
             <div class="progress" style="height:10px;">
-              <div class="progress-bar progress-bar-success progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <div class="progress-bar progress-bar-info progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
                 <span class="sr-only"></span>
               </div>
               <!--
@@ -112,7 +113,7 @@
           </div>
           <div class="dz-car-act-b">
             <div class="progress" style="height:10px;">
-              <div class="progress-bar progress-bar-danger progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <div class="progress-bar progress-bar-info progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
                 <span class="sr-only"></span>
               </div>
             </div>
@@ -120,34 +121,6 @@
         </div>
       </div> <!-- 佛山FIS -->
     </div> <!-- FIS -->
-    <div class="dz-brick" id="sap">
-      <div class="dz-bk-title"><i class="icon-folder-close"></i> Sap服务器</div>
-      <div class="dz-right-act">
-        <div class="dz-sap" id="Stage4">
-        </div>
-        <div class="dz-sap-f" id="Stage4-f">
-        </div>
-        <!--
-          dz-sap:   成功
-          dz-sap-f: 失败
-        -->
-      </div>
-    </div> <!-- Sap -->
-  </div>
-  <div class="dz-bk-right-group">
-    <div class="dz-brick" id="portal">
-      <div class="dz-bk-title"><i class="icon-home"></i> Portal服务器</div>
-      <div class="dz-right-act">
-        <div class="dz-portal" id="Stage5">
-        </div>
-        <div class="dz-portal-f" id="Stage5-f">
-        </div>
-        <!--
-          dz-portal:   成功
-          dz-portal-f: 失败
-        -->
-      </div>
-    </div> <!-- Portal -->
     <div class="dz-brick" id="outlook">
       <div class="dz-bk-title"><i class="icon-envelope"></i> Outlook服务器</div>
       <div class="dz-right-act">
@@ -161,7 +134,34 @@
         -->
       </div>
     </div> <!-- Outlook -->
-    
+  </div>
+  <div class="dz-bk-right-group">
+    <div class="dz-brick" id="sap">
+      <div class="dz-bk-title"><i class="icon-folder-close"></i> Sap服务器</div>
+      <div class="dz-right-act">
+        <div class="dz-sap" id="Stage4">
+        </div>
+        <div class="dz-sap-f" id="Stage4-f">
+        </div>
+        <!--
+          dz-sap:   成功
+          dz-sap-f: 失败
+        -->
+      </div>
+    </div> <!-- Sap -->
+    <div class="dz-brick" id="portal">
+      <div class="dz-bk-title"><i class="icon-home"></i> Portal服务器</div>
+      <div class="dz-right-act">
+        <div class="dz-portal" id="Stage5">
+        </div>
+        <div class="dz-portal-f" id="Stage5-f">
+        </div>
+        <!--
+          dz-portal:   成功
+          dz-portal-f: 失败
+        -->
+      </div>
+    </div> <!-- Portal -->
   </div>
   <div class="clearfix"></div>
 </div>

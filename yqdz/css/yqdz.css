@@ -14,7 +14,7 @@ body {
   line-height: 1.2;
   -ms-content-zooming: none;
   color:#fff;
-  zoom: 0;
+  zoom: 1;
 }
 
 @font-face {
@@ -34,7 +34,7 @@ body {
   border-bottom:none;
   padding:30px 0;
   cursor:default;
-  font-family:minijianchaochuhei71267;
+  font-family:minijianchaochuhei77001;
 }
 .dz-header:hover {
   background: rgba(5, 42, 102, 1);

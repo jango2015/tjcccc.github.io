@@ -24,7 +24,8 @@ var symbols = {
          {
             id:'car-a8l',
             type:'image',
-            rect:['-150px','8px','100px','40px','auto','auto'],
+            rect:['-150px','8px','69px','40px','auto','auto'],
+            //rect:['-150px','8px','100px','40px','auto','auto'],
             fill:["rgba(0,0,0,0)",im+"car-sigitar.png",'0px','0px']
          },
          {
@@ -44,7 +45,7 @@ var symbols = {
             ["style", "height", '40px'],
             ["transform", "rotateZ", '0deg'],
             ["motion", "location", '-100px 28px'],
-            ["style", "width", '100px']
+            ["style", "width", '69px']
          ],
          "${_breakdown}": [
             ["style", "top", '12px'],

@@ -24,7 +24,7 @@ var symbols = {
          {
             id:'car-a8l',
             type:'image',
-            rect:['-150px','8px','100px','40px','auto','auto'],
+            rect:['-150px','8px','69px','40px','auto','auto'],
             fill:["rgba(0,0,0,0)",im+"car-a8l.png",'0px','0px']
          }],
          symbolInstances: [
@@ -42,7 +42,7 @@ var symbols = {
          "${_car-a8l}": [
             ["style", "height", '40px'],
             ["motion", "location", '-100px 28px'],
-            ["style", "width", '100px']
+            ["style", "width", '69px']
          ]
       }
    },
