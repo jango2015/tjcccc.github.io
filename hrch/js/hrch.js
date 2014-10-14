@@ -9,9 +9,29 @@
 // 判断是否启动动画
 (function () {
   if (document.getElementsByClassName("index-start-content").length > 0) {
-    document.write("<script type='text/javascript' charset='utf-8' src='js/index-start-content_edgePreload.js'></script>");
+    document.write("<script type='text/javascript' charset='utf-8' src='js/edge_includes/edge.5.0.0.min.js'></script>");
+    $(document).ready(function(){
+      AdobeEdge.loadComposition('index-start-content', 'index-start-content', {
+        scaleToFit: "none",
+        centerStage: "none",
+        minW: "0",
+        maxW: "undefined",
+        width: "674px",
+        height: "544px"
+      }, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","724px","594px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"dom":{}});
+    });
   };
 })();
+
+// 点击首页菜单后菜单消失
+(function () {
+  $(document).ready(function(){
+    $(".is-option-1").click(function(){
+      console.log("- -");
+      $(".is-menu-list").hide();
+    });
+  });
+});
 
 
 // 侧边菜单展开
