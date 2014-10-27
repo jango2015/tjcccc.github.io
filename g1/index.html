@@ -57,6 +57,7 @@
     font-size: 4.8em;
     text-align: center;
     color: #fff;
+    display: none;
   }
   .love > span {
     color: #f00;
@@ -95,7 +96,7 @@
       } else {
         $(".love").html("<span>" + cya[0] + "！" + cya[1] + "！" + cya[2] + "！" + cya[3] + "！</span><br />山无棱！天地合！才敢与<span>" + cya[0] + "</span>绝！");
       }
-      
+      $(".love").slideDown(3000);
     });
   });
 </script>
