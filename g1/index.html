@@ -81,14 +81,20 @@
 <script src="jquery-2.1.1.min.js"></script>
 <script>
   $(document).ready(function () {
-    var cy, i;
+    var cy, i, j;
     var cya = {};
     $("button").click(function () {
       cy = $("input").val();
       for(i = 0; i <= 3; i++) {
         cya[i] = cy.slice(i, i + 1);
       }
-      $(".love").html("<span>" + cya[0] + "！" + cya[1] + "！" + cya[2] + "！" + cya[3] + "！</span><br />山无棱！天地合！才敢与<span>" + cya[0] + "</span>绝！");
+      j = Math.ceil(Math.random() * i) - 1;
+      console.log(j);
+      if (cya[j]) {
+        $(".love").html("<span>" + cya[0] + "！" + cya[1] + "！" + cya[2] + "！" + cya[3] + "！</span><br />山无棱！天地合！才敢与<span>" + cya[j] + "</span>绝！");
+      } else {
+        $(".love").html("<span>" + cya[0] + "！" + cya[1] + "！" + cya[2] + "！" + cya[3] + "！</span><br />山无棱！天地合！才敢与<span>" + cya[0] + "</span>绝！");
+      }
       
     });
   });
