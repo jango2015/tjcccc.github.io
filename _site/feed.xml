@@ -4,10 +4,10 @@
     <title>tjcccc blog at github</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://t.contrive.cn/blog//</link>
-    <atom:link href="http://t.contrive.cn/blog//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 26 Jan 2015 14:24:08 +0800</pubDate>
-    <lastBuildDate>Mon, 26 Jan 2015 14:24:08 +0800</lastBuildDate>
+    <link>http://t.contrive.cn/</link>
+    <atom:link href="http://t.contrive.cn/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 26 Jan 2015 15:36:12 +0800</pubDate>
+    <lastBuildDate>Mon, 26 Jan 2015 15:36:12 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,13 +28,80 @@
 
 </description>
         <pubDate>Sun, 25 Jan 2015 19:17:27 +0800</pubDate>
-        <link>http://t.contrive.cn/blog//jekyll/update/2015/01/25/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://t.contrive.cn/blog//jekyll/update/2015/01/25/welcome-to-jekyll.html</guid>
+        <link>http://t.contrive.cn/jekyll/update/2015/01/25/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://t.contrive.cn/jekyll/update/2015/01/25/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>简单配置VPN服务器（Windows Server 2008）及解决配置后外网IP不能远程连接的问题</title>
+        <description>&lt;h1 id=&quot;vpnwindows-server-2008ip&quot;&gt;简单配置VPN服务器（Windows Server 2008）及解决配置后外网IP不能远程连接的问题&lt;/h1&gt;
+
+&lt;h2 id=&quot;vpn&quot;&gt;1. 配置VPN服务器&lt;/h2&gt;
+
+&lt;p&gt;　　&lt;strong&gt;目的：将服务器作为VPN服务器。通过连接该服务器，可以上外网。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;　　首先，在服务器管理器中，“添加角色”——“网络策略和访问服务”。
+　　
+&amp;gt;&lt;img src=&quot;../_attachments/1412/vpn-01.png&quot; alt=&quot;网络策略和访问服务&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　“角色服务”为“路由和远程访问服务”。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-02.png&quot; alt=&quot;路由和远程访问服务&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　配置以“虚拟专用网络(VPN)访问和NAT”为例。这符合需要，也较简单。但选择此项之前需要再建立一块“网络适配器”，你可以去设备管理器中添加Loopback网卡。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-03.png&quot; alt=&quot;VPN+NAT&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　连接到Internet的网络接口自然选可以上外网的那块。但在这里配置似乎没用，等会还要再改。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-04.png&quot; alt=&quot;选择外网网卡&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　IP地址就自己随意分配好了。之后所有连到此VPN服务器的计算机都自动成为了它局域网中的客户端。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-05.png&quot; alt=&quot;指定地址&quot; /&gt;
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-06.png&quot; alt=&quot;自定IP段&quot; /&gt;
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-07.png&quot; alt=&quot;不用RADIUS服务器&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　配置完成角色后，注意看它的“系统服务”是否处于运行状态。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-08.png&quot; alt=&quot;服务需运行&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　右键“路由和远程访问”属性。将IPv4的适配器改成该服务器上外网的网卡。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-09.png&quot; alt=&quot;“路由和远程访问”属性&quot; /&gt;
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-10.png&quot; alt=&quot;更改IPv4的适配器&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　然后在创建新用户。“拨入”——“网络访问权限”——“允许访问”。然后这个帐号就可以用来连接VPN服务器了。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-11.png&quot; alt=&quot;VPN帐号&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　可用来访问外网的VPN服务器配置完毕。
+　　
+##2. 解决外网IP不能远程连接的问题&lt;/p&gt;
+
+&lt;p&gt;　　VPN配置成功后遇到一个问题，用原来的外网IP不能连接该服务器的远程桌面了。可能是处于安全考虑，它现在禁止你用外网IP远程连接，只能在连上VPN后用VPN服务器的内网IP连接。如果你想像原来那样用外网IP，就需要改一下NAT的配置。&lt;/p&gt;
+
+&lt;p&gt;　　“路由和远程访问”——“IPv4”——“NAT”——右键上外网网卡看属性——“服务和端口”——勾选“Web服务器”。“专用地址”填本机“127.0.0.1”，将本机局域网IP转为外网IP。
+　　
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-12.png&quot; alt=&quot;更改NAT配置&quot; /&gt;
+&amp;gt;&lt;img src=&quot;http://tjcccc.github.io/blog/_attachments/1412/vpn-13.png&quot; alt=&quot;设置IP转换&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　现在就可以像原来那样远程连接了。&lt;/p&gt;
+
+&lt;p&gt;1412232357&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Dec 2014 07:57:00 +0800</pubDate>
+        <link>http://t.contrive.cn/config/2014/12/24/01-vpn-ws08-rdp.html</link>
+        <guid isPermaLink="true">http://t.contrive.cn/config/2014/12/24/01-vpn-ws08-rdp.html</guid>
+        
+        
+        <category>config</category>
         
       </item>
     
