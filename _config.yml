@@ -12,3 +12,6 @@ github_username:  tjcccc
 
 # Build settings
 markdown: kramdown
+
+# Exclude
+exclude: [test, attachements]
